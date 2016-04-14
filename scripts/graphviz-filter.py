@@ -16,7 +16,7 @@ def sha1(x):
     return hashlib.sha1(x.encode(sys.getfilesystemencoding())).hexdigest()
 
 def out(s):
-    sys.stderr.write('\t[GRAPHV] ' + s + "\n");
+    sys.stderr.write('[GRAPHV] ' + s + "\n");
 
 imagedir = "graphviz-images"
 

@@ -15,7 +15,7 @@ def sha1(x):
   return hashlib.sha1(x).hexdigest()
 
 def out(s):
-    sys.stderr.write('\t[PLTUML] ' + s + '\n');
+    sys.stderr.write('[PLTUML] ' + s + '\n');
 
 imagedir = "plantuml-images"
 

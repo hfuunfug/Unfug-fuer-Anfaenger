@@ -18,7 +18,7 @@ def sha1(x):
 imagedir = "blockdiag-images"
 
 def out(s):
-    sys.stderr.write('\t[BLKDIA] ' + s + '\n');
+    sys.stderr.write('[BLKDIA] ' + s + '\n');
 
 def save(data):
     fd, name = tempfile.mkstemp()

@@ -15,7 +15,7 @@ def sha1(x):
   return hashlib.sha1(x).hexdigest()
 
 def out(s):
-    sys.stderr.write('\t[R     ] ' + s + '\n');
+    sys.stderr.write('[R     ] ' + s + '\n');
 
 imagedir = "r-images"
 

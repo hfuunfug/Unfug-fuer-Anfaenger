@@ -15,7 +15,7 @@ import sys
 from pandocfilters import toJSONFilter, Str, Para, Image
 
 def out(s):
-    sys.stderr.write('\t[MSCGEN] ' + s + '\n')
+    sys.stderr.write('[MSCGEN] ' + s + '\n')
 
 def sha1(x):
     return hashlib.sha1(x.encode(sys.getfilesystemencoding())).hexdigest()
