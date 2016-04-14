@@ -98,9 +98,17 @@ all: $(TARGET)
 
 $(TARGET): $(OUT)
 	@$(ECHO) "[PANDOC]"
-	$(PANDOC) $(DOCUMENT_SETTINGS) $(SOURCES) -o $(TARGET)
+	@$(PANDOC) $(DOCUMENT_SETTINGS) $(SOURCES) -o $(TARGET)
 
 $(OUT):
 	@$(ECHO) "[MKDIR ]"
 	@$(MKDIR) $(OUT)
+
+clean:
+	@$(ECHO) "[RM    ] $(TARGET)"
+	@$(RM) $(TARGET)
+	@$(ECHO) "[RMDIR ] $(OUT)"
+	@$(RM) $(OUT)
+
+.PHONY: $(TARGET)
 
