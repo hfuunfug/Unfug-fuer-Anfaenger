@@ -65,7 +65,7 @@ export FILTERING_ARGS=$(foreach x, $(FILTER_SCRIPTS), --filter $x)
 #
 PANDOC_CC=$(shell which pandoc)
 PANDOC_PARAMS=-r \
-	markdown+simple_tables+table_captions+yaml_metadata_block+definition_lists+footnotes+inline_notes \
+	markdown+simple_tables+table_captions+yaml_metadata_block+definition_lists+footnotes+inline_notes+raw_tex \
 	--filter pandoc-crossref \
 	--filter pandoc-citeproc \
 	$(FILTERING_ARGS)
