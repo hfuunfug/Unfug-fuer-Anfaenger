@@ -1,0 +1,49 @@
+
+\tikzstyle{every node}=[draw=black,thick,anchor=west]
+\tikzstyle{file}=[dashed]
+
+\begin{wrapfigure}{l}{0.33\textwidth}
+    \begin{tikzpicture}[
+        grow via three points={one child at (0.5,-1.0) and
+        two children at (0.5,-1.0) and (0.5,-2.0)},
+        edge from parent path={(\tikzparentnode.south) |- (\tikzchildnode.west)}]
+        \node {/}
+            child { node {/bin}
+                child { node [file] {/sh} }
+            }
+            child [missing] {}
+            child { node {/etc}
+                child { node [file] {/passwd} }
+            }
+            child [missing] {}
+            child { node {/home} }
+            child { node {/usr}
+                child { node {/bin}
+                    child { node [file] {/bash} }
+                }
+                child [missing] {}
+                child { node {/lib} }
+                child { node {/local}
+                    child { node {/bin} }
+                }
+                child [missing] {}
+                child { node {/sbin} }
+                child { node {/share} }
+            }
+            child [missing] {}
+            child [missing] {}
+            child [missing] {}
+            child [missing] {}
+            child [missing] {}
+            child [missing] {}
+            child [missing] {}
+            child { node {/dev}
+                child { node {/tty0} }
+                child { node {/tty1} }
+            };
+    \end{tikzpicture}
+
+    \caption{(Unvollst.) Dateisystembaum unter Linux}
+    \label{img:grundlagen:pkgman:linux_fs_tree}
+\end{wrapfigure}
+
