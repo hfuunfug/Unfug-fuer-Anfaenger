@@ -55,13 +55,20 @@ RM=$(RM_CMD) $(RM_ARG)
 export RM
 
 #
+# Filters
+#
+export FILTER_SCRIPTS=$(shell find $(SCRIPTS) -name "*-filter.py")
+export FILTERING_ARGS=$(foreach x, $(FILTER_SCRIPTS), --filter $x)
+
+#
 # CC
 #
 PANDOC_CC=$(shell which pandoc)
 PANDOC_PARAMS=-r \
 	markdown+simple_tables+table_captions+yaml_metadata_block+definition_lists+footnotes+inline_notes \
 	--filter pandoc-crossref \
-	--filter pandoc-citeproc
+	--filter pandoc-citeproc \
+	$(FILTERING_ARGS)
 
 export PANDOC=$(PANDOC_CC) $(PANDOC_PARAMS)
 
