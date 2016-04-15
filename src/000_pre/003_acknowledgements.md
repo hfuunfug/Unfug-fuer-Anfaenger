@@ -1,3 +1,4 @@
-\chapter{Acknowledgements}
+\chapter{Danksagung}
 
-Write your "Thank You"s here!
+Vielen Dank.
+
