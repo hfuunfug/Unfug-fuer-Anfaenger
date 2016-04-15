@@ -109,6 +109,8 @@ clean:
 	@$(RM) $(TARGET)
 	@$(ECHO) "[RMDIR ] $(OUT)"
 	@$(RM) $(OUT)
+	@$(ECHO) "[RM -r ] generated-images"
+	@$(RM) generated-images
 
 .PHONY: $(TARGET)
 

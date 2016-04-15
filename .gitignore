@@ -1,6 +1,2 @@
 bin
-blockdiag-images
-graphviz-images
-msc-images
-plantuml-images
-r-images
+generated-images

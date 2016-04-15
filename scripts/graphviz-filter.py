@@ -18,7 +18,7 @@ def sha1(x):
 def out(s):
     sys.stderr.write('[GRAPHV] ' + s + "\n");
 
-imagedir = "graphviz-images"
+imagedir = "generated-images"
 
 def graphviz(key, value, format, meta):
     if key == 'CodeBlock':

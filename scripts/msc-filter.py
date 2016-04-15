@@ -20,7 +20,7 @@ def out(s):
 def sha1(x):
     return hashlib.sha1(x.encode(sys.getfilesystemencoding())).hexdigest()
 
-imagedir = "msc-images"
+imagedir = "generated-images"
 
 def mscgen(key, value, format, meta):
     if key == 'CodeBlock':

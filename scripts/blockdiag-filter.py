@@ -15,7 +15,7 @@ from pandocfilters import toJSONFilter, Str, Para, Image, attributes
 def sha1(x):
   return hashlib.sha1(x).hexdigest()
 
-imagedir = "blockdiag-images"
+imagedir = "generated-images"
 
 def out(s):
     sys.stderr.write('[BLKDIA] ' + s + '\n');
