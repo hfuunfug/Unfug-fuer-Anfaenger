@@ -13,6 +13,7 @@ Dies ist eine Beispiel-Sub-Section.
 #### Beispiel
 
 Dies ist eine Beispiel-Sub-Sub-Section.
+Hier ist sogar ein Beispiel verlinkt [@example].
 
 ##### Beispiel
 
