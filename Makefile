@@ -103,6 +103,10 @@ $(TARGET): $(OUT)
 	@$(ECHO) "[PANDOC]"
 	@$(PANDOC) $(DOCUMENT_SETTINGS) $(SOURCES) -o $(TARGET)
 
+latex-out:
+	@$(ECHO) "[PANDOC]"
+	@$(PANDOC) $(DOCUMENT_SETTINGS) $(SOURCES) --to latex
+
 $(OUT):
 	@$(ECHO) "[MKDIR ]"
 	@$(MKDIR) $(OUT)
