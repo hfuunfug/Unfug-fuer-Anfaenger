@@ -85,7 +85,7 @@ DOCUMENT_SETTINGS=\
 	--chapters \
 	--bibliography=papers.bib  \
 	-H $(TEMPLATE)/preamble.tex \
-	--csl=$(TEMPLATE)/csl/nature.csl
+	--csl=$(TEMPLATE)/csl/acm-sig-proceedings.csl
 
 #
 #
