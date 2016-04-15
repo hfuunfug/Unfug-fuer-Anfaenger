@@ -1,4 +1,6 @@
-## Table examples
+\part{foo}
+
+# Table examples
 
 Pandoc has several extensions for tables, we have them all here:
 

@@ -1,3 +1,5 @@
+\part{Grafische Beispiele}
+
 # Graphic examples
 
 The following chapter contains a list of graphics which are generated using
