@@ -65,7 +65,7 @@ export FILTERING_ARGS=$(foreach x, $(FILTER_SCRIPTS), --filter $x)
 #
 PANDOC_CC=$(shell which pandoc)
 PANDOC_PARAMS=-r \
-	markdown+simple_tables+table_captions+yaml_metadata_block+definition_lists+footnotes+inline_notes+raw_tex \
+	markdown+simple_tables+table_captions+yaml_metadata_block+definition_lists+footnotes+inline_notes+raw_tex+fenced_code_blocks+fenced_code_attributes+backtick_code_blocks \
 	--filter pandoc-crossref \
 	--filter pandoc-citeproc \
 	$(FILTERING_ARGS)
@@ -77,6 +77,8 @@ export PANDOC=$(PANDOC_CC) $(PANDOC_PARAMS)
 #
 
 DOCUMENT_SETTINGS=\
+	--standalone \
+	-M listings=true \
 	--latex-engine=xelatex \
 	-V fontsize=12pt \
 	-V documentclass:book \
@@ -84,8 +86,9 @@ DOCUMENT_SETTINGS=\
 	-V classoption:openright \
 	--chapters \
 	--bibliography=papers.bib  \
-	-H $(TEMPLATE)/preamble.tex \
-	--csl=$(TEMPLATE)/csl/acm-sig-proceedings.csl
+	--include-in-header $(TEMPLATE)/preamble.tex \
+	--csl=$(TEMPLATE)/csl/acm-sig-proceedings.csl \
+	--highlight-style pygments
 
 #
 #
