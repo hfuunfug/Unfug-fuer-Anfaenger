@@ -23,22 +23,24 @@ Das Inhaltsverzeichniss wird bestimmt helfen das zu finden wonach man sucht.
 Dieses Buch ist unter der **CC BY-SA 4.0** Lizenz verfügbar.
 Dies heißt dass das Buch für immer verteilt werden darf, ohne kosten; das man es
 verändern darf (und diese Veränderung dann auch verteilen darf).
-Man dürfte das Buch sogar verkaufen.
+Man darf das Buch sogar verkaufen.
 Falls du dass Buch verteilst musst du alle Änderungen markieren, sowie die neue
 Version unter der gleichen Lizenz zugänglich machen.
 
 Die Folgen sind natürlich ein Freies Buch.
-Die Information hier drin sind kostenlos (wenn auch ohne Gewähr auf Richtigkeit,
+Die Information hier drin sind kostenlos (wenn auch ohne Gewähr auf Korrektheit,
 also mitdenken!) und man kann es auch jederzeit ansehen.
-Tip: *Vergisst nicht euch eine lokale Version mit git zu klonen.*
+Tipp: *Vergisst nicht euch eine lokale Version mit git zu klonen.*
 
-Die aktuellste Version ist stets auf der UnFUG Github Seite zu finden.
+Die aktuellste Version ist stets auf der UnFUG Github[^github] Seite zu finden.
 Falls dies also eine ältere Version ist kann man sich dort umschauen für neue
 Kapitel bzw. aufbereitete Kapitel.
 
 # Vorschläge
 
-Vorschläge sind natürlich erwünscht und können auf dem Github Repository
-eingereicht werden.
-Auch Fehler sind möglich, das heisst falls ihr welche findet, bitte teilt uns
-diese mit.
+Vorschläge sind natürlich erwünscht und können auf dem Github
+Repository[^github] eingereicht werden.
+Wir nehmen auch gerne Hinweiße auf Fehler oder -Korrekturen an.
+
+
+[^github]: https://github.com/hfuunfug/Unfug-fuer-Anfaenger/
